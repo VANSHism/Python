@@ -61,4 +61,7 @@ def get_response(user_input):
 
 #Testing the response system
 while True:
-    print('Bot: ' + get_response(input('You: ')))
+    user_inp = get_response(input('You: '))
+    print('Bot: ' + user_inp)
+    if user_inp.lower() in ['quit', 'exit', 'stop']:
+        break
