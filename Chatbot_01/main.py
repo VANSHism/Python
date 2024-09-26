@@ -59,7 +59,7 @@ def get_response(user_input):
     response = check_all_messages(split_msg)
     return response
 
-#Testing the response system
+# The response system
 while True:
     user_inp = get_response(input('You: '))
     print('Bot: ' + user_inp)
